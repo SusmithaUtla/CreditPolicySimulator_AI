@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env
+.venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dataset and large files
+datasets/
+data/
+*.csv
+*.parquet
+
+# Logs and local config
+*.log
+*.sqlite3
+
+# OneDrive/temp
+~$*
+
+# Pytest cache
+.pytest_cache/
+
+# Pipenv
+Pipfile.lock
+
+# Coverage
+htmlcov/
+.coverage
+
+# Secrets
+.env.local
+secrets.json
+
+# Wheel
+*.whl
+
+# Model artifacts
+*.pkl
