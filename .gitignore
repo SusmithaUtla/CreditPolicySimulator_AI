@@ -28,7 +28,6 @@ dist/
 Thumbs.db
 
 # Dataset and large files
-datasets/
 data/
 *.parquet
 
