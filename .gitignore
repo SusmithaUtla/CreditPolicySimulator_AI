@@ -30,7 +30,6 @@ Thumbs.db
 # Dataset and large files
 datasets/
 data/
-*.csv
 *.parquet
 
 # Logs and local config
