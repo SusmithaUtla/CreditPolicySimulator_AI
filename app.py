@@ -10,13 +10,14 @@ import streamlit as st
 PROJECT_ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-
-load_dotenv(PROJECT_ROOT / ".env")
-
 # Cloud: Streamlit secrets | Local: .env file
-if "GROQ_API_KEY" in st.secrets:
-    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
-else:
+try:
+    if "GROQ_API_KEY" in st.secrets:
+        os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+    else:
+        from dotenv import load_dotenv
+        load_dotenv(PROJECT_ROOT / ".env")
+except Exception:
     from dotenv import load_dotenv
     load_dotenv(PROJECT_ROOT / ".env")
 
